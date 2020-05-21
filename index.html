@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <title>Simple js data table</title>
+    <meta name="author" content="ramey29" />
+    <meta name="keyword" content="datatable, table, simple table, js table" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./datatable.css" />
+  </head>
+
+  <body>
+    <section id="rtable"></section>
+    <script src="./datatable.js"></script>
+    <script>
+      "use strict";
+      let dataTable = new RDatatable({
+        el: "#rtable",
+        url: "https://restcountries.eu/rest/v2/all",
+        config: {
+          pageSize: 20,
+          pageNumber: 1,
+          ispaginated: true, // or lazyloading
+          dataMap: {
+            name: "<!name!>",
+            "native name": "<!nativeName!>",
+            "alpha code": "<!alpha2Code!> - <!alpha3Code!>",
+            area: "<!area!>",
+            population: "<!population!>",
+            subregion: "<!subregion!>",
+            flag: "<img style='width:30px;height:30px;' src='<!flag!>'>",
+          },
+          sortData: {},
+          filterData: [],
+        },
+      });
+    </script>
+  </body>
+</html>

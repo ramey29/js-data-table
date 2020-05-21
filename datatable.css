@@ -1,0 +1,39 @@
+html,
+div,
+p,
+a,
+span,
+img {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.dataRTable {
+  background-color: #fff;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+.dataRTable thead {
+  background-color: #f5f5f5;
+}
+.dataRTable thead tr {
+}
+.dataRTable thead tr th {
+  font-family: inherit;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: normal;
+}
+.dataRTable tbody {
+}
+.dataRTable tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+.dataRTable tbody tr td {
+}
